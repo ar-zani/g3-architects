@@ -1,0 +1,131 @@
+/* font family */
+
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap');
+
+:root {
+    --work-sans: 'Work Sans', sans-serif;
+    --blue: #005FAC;
+    --orange: #FF900E;
+
+}
+
+/* page css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 10px;
+}
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    font-family: var(--work-sans);
+}
+
+.txt-orange{
+    color: #FF900E;
+}
+.btn {
+    font-size: 2rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: #FFF;
+    background: #FF900E;
+    border-radius: 8px;
+    width: 18rem;
+    padding: 2rem;
+    display: inline-block;
+}
+
+
+
+
+/********************** header **********************/
+
+header {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+.logo h2 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    list-style: none;
+    padding: 1rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 1.6rem;
+    color: black;
+    font-weight: 500;
+}
+
+/* main */
+
+main {
+    width: 80%;
+    margin: auto;
+}
+
+.banner .title {
+    width: 80%;
+    /* margin: auto; */
+    text-align: center;
+    margin: 5rem auto;
+}
+
+.banner h1 {
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+.banner p {
+    font-size: 1.6rem;
+    margin: 2rem;
+}
+ .banner-img img{
+    width: 100%;
+    margin-bottom: 1rem;
+ }
+
+/********************** header **********************/ 
+
+.features{
+    display: flex;
+    align-items: center;
+}
+
+.features .gallery{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 2.5rem;
+    padding: 5rem;
+}
+
+.features .feature-info{
+    padding: 5rem;
+}
+.features .feature-info h3{
+    font-size: 3rem;
+}
+.features .feature-info p{
+    font-size: 1.6rem;
+    line-height: 3rem;
+}
